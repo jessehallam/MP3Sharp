@@ -68,7 +68,7 @@ namespace MP3Sharp
             {
                 throw new ArgumentNullException("bufferOut");
             }
-            if ((count + offset) >= bufferOut.Length)
+            if ((count + offset) > bufferOut.Length)
             {
                 throw new ArgumentException("The sum of offset and count is larger than the buffer length");
             }
